@@ -1,4 +1,6 @@
 import random
+
+
 list_1 = []
 i = 0
 while i < 10:                              # lets add random numbers to list_1

@@ -6,10 +6,10 @@ print('Good morning, ' + c, end='.\n')  # just greeting
 print(c, type(c), len(c))               # lets see what type we have
 
 # trying to manipulate strings
-print(c.replace(' ', '-'))
-print(c.lower())
-print(c.upper())
-print(c.count('lo'))                    # we have 2 "lo" in the end of name and surname
+print('Replace "space" with "-":', c.replace(' ', '-'))
+print('How we see this in lowercase:', c.lower())
+print('How we see this in uppercase:', c.upper())
+print('Lets count how many "lo" we have:', c.count('lo'))
 
 c = c.split(' ')
 print(c, type(c), len(c))
@@ -19,5 +19,4 @@ c3 = c[1] + ' ' + c[0]
 print(c3, type(c3), len(c3))
 
 # lets make only initials from variables "z" and "x"
-c4 = z[0:1] + ' ' + x[0:1]
-print(c4.replace(' ', '.'), end='.')
+print(z[0] + '.' + x[0] + '.')

@@ -1,4 +1,6 @@
 import random
+
+
 list_1 = []
 list_2 = []
 i = 0
