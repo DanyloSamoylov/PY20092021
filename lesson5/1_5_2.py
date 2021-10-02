@@ -1,13 +1,11 @@
 user_data = input('Please enter your phone number:')
-tele_num = user_data
 user_number = []
 
-if len(tele_num) == 10 and tele_num.isdigit():
-    user_number.append(tele_num)
+if len(user_data) == 10 and user_data.isdigit():
+    user_number.append(user_data)
     print('Thank you, we got your phone number.')
-elif len(tele_num) < 10 or len(tele_num) > 10:
-    print('Number must be 10 symbols only.')
-else:
+elif not user_data.isdigit():
     print('You need to use only numbers - not letters.')
-
+else:
+    print('Number must be 10 symbols only.')
 print('Result:', user_number, type(user_number))
