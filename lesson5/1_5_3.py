@@ -1,9 +1,8 @@
 user_data = input('Please enter your name:')
-work_name = user_data
 name_data = []
 
 if user_data.isalpha():
-    name_data.append(work_name.lower())
+    name_data.append(user_data.lower())
 elif user_data.isdigit():
     print('You need to use only letters.')
 else:
