@@ -1,0 +1,17 @@
+{
+  "1234567890": {
+    "name": "test_name",
+    "lastname": "test_lastname",
+    "city": "test_city"
+  },
+  "09876": {
+    "name": "kate",
+    "lastname": "samoylova",
+    "city": "kh"
+  },
+  "1234": {
+    "name": "dany",
+    "lastname": "samoylov",
+    "city": "kh"
+  }
+}
