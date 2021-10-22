@@ -1,3 +1,4 @@
+
 def task2(a, b):
     return int(a) ** 2 / int(b)
 
