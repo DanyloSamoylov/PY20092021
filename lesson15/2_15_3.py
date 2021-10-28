@@ -4,15 +4,18 @@ from functools import wraps
 def arg_rules(type_: type, max_length: int, contains: list):
     def inner(func):
         @wraps(func)
-        def wrapper(*args, **kwargs):
-            if type(*args, **kwargs) != type_:
-                print('Wrong type of data.')
-            if len(*args, **kwargs) > max_length:
-                print('Wrong length')
+        def wrapper(str_):
+            if type(str_) != type_:
+                print(f'Wrong type of data - {type_}.')
+                return False
+            if len(str_) > max_length:
+                print(f'Wrong length - {max_length}')
+                return False
             for symbol in contains:
                 if symbol not in contains:
                     print('Wrong symbols')
-            return func(*args, **kwargs)
+                    return False
+            return func(str_)
         return wrapper
     return inner
 
