@@ -8,6 +8,7 @@ def create_json():
 
 create_json()
 
+
 def menu_():
     print('1. Print Phonebook')
     print('2. Add a Phone Number')
